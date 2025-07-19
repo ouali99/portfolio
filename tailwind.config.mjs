@@ -15,8 +15,8 @@ export default {
                 darkTheme: '#11001F',
             },
             fontFamily: {
-                outfit: ['Outfit', 'sans-serif'],
-                ovo: ['Ovo', 'serif'],
+                Outfit: ['Outfit', 'sans-serif'],
+                Ovo: ['Ovo', 'serif'],
             },
         },
     },
