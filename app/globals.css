@@ -1,4 +1,4 @@
-@tailwinfd base;
+@import "tailwindcss";
 @tailwind utilities;
 
 *{
