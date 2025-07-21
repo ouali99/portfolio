@@ -8,7 +8,7 @@ const Services = () => {
       <h4 className="text-center mb-2 text-lg font-Ovo">What I offer</h4>
       <h2 className="text-center text-5xl font-Ovo">My Services</h2>
 
-      <p className='test-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+      <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
         As a Full Stack Developer, I provide end-to-end solutions for building modern and responsive web applications. From crafting elegant frontend interfaces with React and Tailwind CSS, to designing robust backends using Node.js and FastAPI, I help bring ideas to life. I also offer deployment and optimization services to ensure your applications are fast, secure, and ready for production environments like AWS and Vercel.
       </p>
 
