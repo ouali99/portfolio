@@ -7,6 +7,7 @@ export default {
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
@@ -26,6 +27,6 @@ export default {
                 'auto': 'repeat(auto-fit, minmax(200px, 1fr))',
             },
         },
-        plugins: [],
     },
+    plugins: [],
 };
