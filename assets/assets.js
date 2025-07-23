@@ -35,6 +35,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import aws from './aws.png';
+import android_studio from './android_studio.png';
 
 export const assets = {
     user_image,
@@ -73,45 +75,57 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    aws,
+    android_studio
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'AI Teccart',
+        description: 'AI-powered chatbot assistant for students at Institut Teccart, providing instant answers and useful resources.',
         bgImage: '/work-1.png',
+        link: 'https://ai.teccart.qc.ca/',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Teccart - Leave & Absence Manager',
+        description: 'Web application for managing student absences and leave requests with an intuitive admin dashboard.',
         bgImage: '/work-2.png',
+        link: 'https://absences.teccart.qc.ca/',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'EducLydIA',
+        description: 'AI-driven platform for managing courses, grades, and student performance analytics.',
         bgImage: '/work-3.png',
+        link: 'https://edu-lydi-ai.vercel.app/',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Medical App',
+        description: 'SaaS platform for managing medical appointments and consultations, featuring an integrated chat system and AI tools for analyzing medical PDFs and images (ultrasound, X-ray, etc.).',
         bgImage: '/work-4.png',
+        link: '',
+    },
+    {
+        title: 'Clone Uber',
+        description: 'mobile application that allows users to book rides, track drivers, and manage payments, similar to Uber.',
+        bgImage: '/work-5.png',
+        link: '',
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web app', description: 'Full-stack web development using modern frameworks to build responsive and scalable web applications....', link: '' },
+    { icon: assets.mobile_icon, title: 'Deployment (AWS & Vercel)', description: 'Deployment of web applications using AWS and Vercel for reliable, secure, and scalable hosting solutions....', link: '' },
+    { icon: assets.ui_icon, title: 'API Integration', description: 'Design and integration of RESTful APIs to enable seamless communication between services....', link: '' },
+    { icon: assets.graphics_icon, title: 'Database Management', description: 'Efficient database design and management with SQL and NoSQL solutions for robust backend systems...', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Python, Java, C#, SQL, Dart' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'DEC in Web and Mobile Programming (completed without EUF) • AEC in Web and Mobile Programming' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 10+ full-stack projects including AI chatbots, booking systems, and management platforms' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.aws, assets.android_studio
 ];

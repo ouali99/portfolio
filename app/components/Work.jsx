@@ -41,7 +41,10 @@ const Work = () => {
       transition={{ duration: 0.6 , delay: 0.9 }}
       className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5 my-10'>
         {workData.map((project, index) => (
-          <div 
+          <a
+          href={project.link} 
+          target="_blank" 
+          rel="noopener noreferrer"
           className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" 
           key={index} 
           style={{backgroundImage: `url(${project.bgImage})`}}>
@@ -54,7 +57,8 @@ const Work = () => {
                     <Image src={assets.send_icon} alt="send icon" className='w-5'/>
                 </div>
             </div>
-          </div>
+          
+          </a>
         ))}
       </motion.div>
       <motion.a 
