@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -8,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import ThemeWrapper from "./ThemeWrapper";
+import { LanguageProvider } from "./context/LanguageContext";
 
 
 export default function Home() {
@@ -35,18 +35,20 @@ export default function Home() {
     }
   },[isDarkMode]);*/
   return (
-    <ThemeWrapper>
-      {({ isDarkMode, setIsDarkMode }) => (
-        <>
-          <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-          <Header isDarkMode={isDarkMode} />
-          <About isDarkMode={isDarkMode} />
-          <Services isDarkMode={isDarkMode} />
-          <Work isDarkMode={isDarkMode} />
-          <Contact isDarkMode={isDarkMode} />
-          <Footer isDarkMode={isDarkMode} />
-        </>
-      )}
-    </ThemeWrapper>
+    <LanguageProvider>
+      <ThemeWrapper>
+        {({ isDarkMode, setIsDarkMode }) => (
+          <>
+            <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            <Header />
+            <About />
+            <Services />
+            <Work />
+            <Contact />
+            <Footer />
+          </>
+        )}
+      </ThemeWrapper>
+    </LanguageProvider>
   );
 }
