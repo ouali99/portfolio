@@ -99,6 +99,21 @@ export const translations = {
           description:
             "Mobile application that allows users to book rides, track drivers, and manage payments, similar to Uber.",
         },
+        {
+          title: "Virtual Queue (FDA)",
+          description:
+            "Virtual queuing application for students at Institut Teccart, allowing them to take a number and wait their turn remotely.",
+        },
+        {
+          title: "School Store Manager",
+          description:
+            "Inventory and order management application for the school store, enabling staff to track stock levels and process student orders efficiently.",
+        },
+        {
+          title: "Brainiatic",
+          description:
+            "AI-powered receptionist agent for restaurants, salons, and clinics — handles bookings, answers customer questions, and manages appointments automatically.",
+        },
       ],
     },
     contact: {
@@ -217,6 +232,21 @@ export const translations = {
           title: "Clone Uber",
           description:
             "Application mobile permettant aux utilisateurs de réserver des trajets, suivre les chauffeurs et gérer les paiements, similaire à Uber.",
+        },
+        {
+          title: "File d'attente virtuelle (FDA)",
+          description:
+            "Application de file d'attente virtuelle pour les étudiants de l'Institut Teccart, leur permettant de prendre un numéro et d'attendre leur tour à distance.",
+        },
+        {
+          title: "Gestion magasin scolaire",
+          description:
+            "Application de gestion des stocks et des commandes pour le magasin scolaire, permettant au personnel de suivre les niveaux de stock et de traiter les commandes des étudiants.",
+        },
+        {
+          title: "Brainiatic",
+          description:
+            "Agent réceptionniste propulsé par l'IA pour les restaurants, salons et cliniques — gère les réservations, répond aux questions des clients et prend les rendez-vous automatiquement.",
         },
       ],
     },

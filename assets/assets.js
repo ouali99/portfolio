@@ -111,6 +111,18 @@ export const workData = [
         bgImage: '/work-5.png',
         link: '',
     },
+    {
+        title: 'Virtual Queue (FDA)',
+        description: 'Virtual queuing application for students at Institut Teccart, allowing them to take a number and wait their turn remotely.',
+        bgImage: '/work-6.png',
+        link: 'https://fda.teccart.qc.ca/',
+    },
+    {
+        title: 'Magasin Scolaire',
+        description: 'Inventory and order management application for the school store, enabling staff to track stock levels and process student orders efficiently.',
+        bgImage: '/work-7.png',
+        link: 'https://magasin-scolaire.teccart.qc.ca/',
+    }
 ]
 
 export const serviceData = [

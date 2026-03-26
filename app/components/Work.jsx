@@ -4,13 +4,16 @@ import React from 'react'
 import { motion } from "motion/react"
 import { useLanguage } from '../context/LanguageContext'
 
-const workBgImages = ['/work-1.png', '/work-2.png', '/work-3.png', '/work-4.png', '/work-5.png'];
+const workBgImages = ['/work-1.png', '/work-2.png', '/work-3.png', '/work-4.png', '/work-5.png', '/work-6.png', '/work-7.png', '/work-8.png'];
 const workLinks = [
   'https://ai.teccart.qc.ca/',
   'https://absences.teccart.qc.ca/',
   'https://edu-lydi-ai.vercel.app/',
   '',
   '',
+  'https://fda.teccart.qc.ca/',
+  'https://magasin-scolaire.teccart.qc.ca/',
+  'https://www.brainiatic.com/',
 ];
 
 const Work = () => {
@@ -49,13 +52,13 @@ const Work = () => {
       initial={{ opacity:0 }}
       whileInView={{ opacity: 1}}
       transition={{ duration: 0.6, delay: 0.9 }}
-      className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5 my-10'>
+      className='grid grid-cols-2 md:grid-cols-4 gap-5 my-10'>
         {t.work.workList.map((project, index) => (
           <a
           href={workLinks[index]}
           target="_blank"
           rel="noopener noreferrer"
-          className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          className="aspect-square bg-gray-200 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
           key={index}
           style={{backgroundImage: `url(${workBgImages[index]})`}}>
             <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
