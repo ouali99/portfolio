@@ -6,7 +6,7 @@ export default function ThemeWrapper({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    if (localStorage.theme === "dark" || 
+    if (localStorage.theme === "dark" ||
         (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       setIsDarkMode(true);
     } else {

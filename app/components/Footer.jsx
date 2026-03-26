@@ -18,7 +18,7 @@ const Footer = () => {
             <p>©{new Date().getFullYear()} Ouali Ould Braham. All rights reserved.</p>
             <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
                 <li><a target='_blank' href="https://github.com/ouali99">GitHub</a></li>
-                <li><a target='_blank' href="www.linkedin.com/in/ouali-ould-braham-b2143631a">LinkedIn</a></li>
+                <li><a target='_blank' href="https://www.linkedin.com/in/ouali-ould-braham-b2143631a">LinkedIn</a></li>
             </ul>
         </div>
     </div>

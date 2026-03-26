@@ -19,11 +19,11 @@ const Header = () => {
         </motion.h3 >
         <motion.h1 
         initial={{y: -30, opacity: 0}} whileInView={{y: 0,opacity: 1}} transition={{duration: 0.8, delay: 0.5}}
-        className="text-3xl sm:text-6xl lg:test-[66px] ">
+        className="text-3xl sm:text-6xl lg:text-[66px]">
             Full Stack Web Developer
         </motion.h1>
         <motion.p
-        initial={{oppacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}}
+        initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}}
         className="max-w-2xl mx-auto font-Ovo">
             I’m a junior Full Stack Web Developer based in Montreal, passionate about creating responsive and user-friendly web applications. I work on both frontend and backend development and also handle application deployment to deliver complete and production-ready solutions.
         </motion.p>

@@ -11,7 +11,7 @@ const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "611b41a2-4d97-42aa-b78a-7a624eea2402");
+        formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
 
         const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -67,18 +67,18 @@ const Contact = () => {
                 initial={{ x: -50, opacity: 0 }}
                 whileInView={{x: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
-                className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' type="text" placeholder='Enter your name' required name='name'/>
+                className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover dark:border-white/30 dark:text-white dark:placeholder-white/50' type="text" placeholder='Enter your name' required name='name'/>
                 <motion.input 
                 initial={{ x: 50, opacity: 0 }}
                 whileInView={{x: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
-                className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' type="email" placeholder='Enter your email' required name='email'/>
+                className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover dark:border-white/30 dark:text-white dark:placeholder-white/50' type="email" placeholder='Enter your email' required name='email'/>
             </div>
             <motion.textarea 
             initial={{ y: 100, opacity: 0 }}
             whileInView={{y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
-            className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' rows={6} placeholder='Enter your message' required name='message'></motion.textarea>
+            className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover dark:border-white/30 dark:text-white dark:placeholder-white/50 mb-6' rows={6} placeholder='Enter your message' required name='message'></motion.textarea>
 
             <motion.button
             whileHover={{ scale: 1.05 }} 
